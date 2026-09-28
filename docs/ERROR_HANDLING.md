@@ -2,7 +2,7 @@
 
 Technical reference for how **this repository** implements error handling.
 
-**For production guidance** (resilience, operational excellence, observability, LinkedIn-ready checklist): see **[OPERATIONAL_EXCELLENCE.md](OPERATIONAL_EXCELLENCE.md)**.
+**For production guidance** (resilience, operational excellence, observability): see **[OPERATIONAL_EXCELLENCE.md](OPERATIONAL_EXCELLENCE.md)**.
 
 ---
 
@@ -80,5 +80,5 @@ Backends             → Docker, Open-Meteo, SQLite
 
 ## See also
 
-- **[OPERATIONAL_EXCELLENCE.md](OPERATIONAL_EXCELLENCE.md)** — production patterns, checklist, LinkedIn post drafts
+- **[OPERATIONAL_EXCELLENCE.md](OPERATIONAL_EXCELLENCE.md)** — production patterns and readiness checklist
 - **[ARCHITECTURE.md](ARCHITECTURE.md)** — system design and diagrams

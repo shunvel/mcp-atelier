@@ -13,6 +13,9 @@ build/
 .coverage
 htmlcov/
 
+# Local-only notes (not for the repo)
+local/
+
 # Environment and secrets — never commit API keys
 .env
 .env.local
