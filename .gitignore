@@ -1,0 +1,40 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Environment and secrets — never commit API keys
+.env
+.env.local
+.env.*.local
+!.env.example
+*.pem
+secrets.toml
+
+# Generated app data
+data/*.db
+
+# Streamlit
+.streamlit/secrets.toml
+
+# OS and editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
