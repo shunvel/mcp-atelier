@@ -14,6 +14,46 @@ Watch every step in the **Live Activity** tab — LLM reasoning, JSON-RPC over s
 
 ---
 
+## Screenshots
+
+### See inside the agent loop
+
+Every LLM request, tool call, and MCP round-trip — timestamped, color-coded, with expandable JSON payloads.
+
+<p align="center">
+  <img src="docs/images/04-live-activity.png" alt="Live Activity trace showing LLM → MCP → tool → LLM flow" width="900"/>
+</p>
+
+### Chat with real tools
+
+Ask a question. Gemini picks the MCP tool. You get an answer — and a full trace of what happened.
+
+<p align="center">
+  <img src="docs/images/03-chat.png" alt="Chat interface querying SQLite via MCP tools" width="900"/>
+</p>
+
+### Architecture at a glance
+
+<p align="center">
+  <table>
+    <tr>
+      <td align="center"><img src="docs/images/06-diagrams.png" alt="System architecture diagram" width="440"/><br/><sub>Inline SVG diagrams — no CDN required</sub></td>
+      <td align="center"><img src="docs/images/07-workflows.png" alt="Guided MCP prompt workflows" width="440"/><br/><sub>One-click workflows using prompts + resources</sub></td>
+    </tr>
+  </table>
+</p>
+
+<p align="center">
+  <table>
+    <tr>
+      <td align="center"><img src="docs/images/05-inspector.png" alt="MCP server inspector listing tools, resources, prompts" width="440"/><br/><sub>Inspector — 6 tools, 4 resources, 3 prompts</sub></td>
+      <td align="center"><img src="docs/images/02-connected.png" alt="Sidebar showing MCP server connected" width="440"/><br/><sub>Connect once — stdio MCP server spawns automatically</sub></td>
+    </tr>
+  </table>
+</p>
+
+---
+
 ## What you get
 
 | | |
@@ -205,6 +245,18 @@ Python 3.10+ · [FastMCP](https://github.com/modelcontextprotocol/python-sdk) ·
 ## License
 
 MIT — see [LICENSE](LICENSE).
+
+## Regenerating screenshots
+
+With Streamlit running (`streamlit run ui/app.py`):
+
+```bash
+pip install playwright
+playwright install chromium
+python scripts/capture_screenshots.py
+```
+
+Outputs to `docs/images/`.
 
 ## Contributing
 

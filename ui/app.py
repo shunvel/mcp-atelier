@@ -38,7 +38,7 @@ from ui.diagrams import DIAGRAM_RENDERERS
 ENV_FILE = load_project_env()
 
 st.set_page_config(
-    page_title="MCP Learning Lab",
+    page_title="mcp-atelier",
     page_icon="🔬",
     layout="wide",
 )
@@ -168,7 +168,7 @@ def _apply_connection(result: dict) -> None:
 # --- Sidebar ---
 
 with st.sidebar:
-    st.title("MCP Learning Lab")
+    st.title("mcp-atelier")
     st.caption("LLM → MCP Client → Server → Tools/Resources/Prompts")
 
     api_key = get_gemini_api_key()
